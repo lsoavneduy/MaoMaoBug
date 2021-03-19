@@ -3,6 +3,15 @@ const client = new discord.Client();
 const token = process.env.TOKEN;
 const prefix = process.env.PREFIX;
 
+function getLogText() {
+    let d = new Date();
+    let hour = d.getHours() + 8;
+    if (hour >= '24')
+       hour -= 24;
+    logMessage = "[" + hour + ":" + d.getMinutes() + ":" + d.getSeconds() + "] [Log] ";
+    return logMessage;
+}
+
 client.on("ready", () => {
     console.log(getLogText() + "Bot Working :D");
     //client.channels.get("").send(getLogText() + "Bot Working :D");
