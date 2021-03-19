@@ -1,7 +1,7 @@
 const discord = require('discord.js');
 const client = new discord.Client();
 const token = process.env.TOKEN;
-const prefix = '!MMB=>';
+const prefix = '!MMB ';
 
 function getLogText() {
     let d = new Date();
@@ -20,11 +20,13 @@ client.on("ready", () => {
 
 client.on("message", (message) => {
 
-    let input1 = message.content.split(" ")[1];
-    let command = message.content.split(" ")[0];
-    command = command.slice(prefix.length);
+    let command = message.content.split(" ")[1];
     newCommand = command.toLowerCase();
+    let input = message.content.split(" ")[2];
     let args = message.content.split(" ").slice(1);
+    console.log(command);
+    console.log(input);
+    console.log(args);
 
     if (message.author.bot) return;
 
