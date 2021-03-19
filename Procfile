@@ -1,1 +1,1 @@
-Bot: node MaoMaoBug.js
+Bot: node maomaobug.js
