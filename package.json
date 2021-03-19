@@ -1,11 +1,8 @@
 {
   "name": "Bot",
   "version": "",
-  "main": "MaoMaoBug.js",
-  "scripts": {
-  "start": "node MaoMaoBug.js"
-  },
+  "main": "maomaobug.js",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "^12.3.1"
   }
 }
