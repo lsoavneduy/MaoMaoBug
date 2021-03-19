@@ -31,7 +31,7 @@ client.on("message", (message) => {
     if (message.content.startsWith(prefix)) {
         if (newCommand === "hello") {
             console.log(getLogText() + "[Hello] By " + message.author.username.toString());
-            client.channels.get("503586373744459818").send(getLogText() + "[Hello] By " + message.author.username.toString());
+            client.channels.get("822419957370454017").send(getLogText() + "[Hello] By " + message.author.username.toString());
             message.reply("Hello :3");
         }
     }
