@@ -1,7 +1,7 @@
 const discord = require('discord.js');
 const client = new discord.Client();
 const token = process.env.TOKEN;
-const prefix = process.env.PREFIX;
+const prefix = '!MMB=>';
 
 function getLogText() {
     let d = new Date();
