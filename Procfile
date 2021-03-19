@@ -1,1 +1,1 @@
-Bot: node maomaobug.js
+StartBot: node maomaobug.js
